@@ -39,7 +39,7 @@ export class ChangeUserName extends React.Component<Props> {
     this.setUserData();
   }
 
-  componentDidUpdate(prevProps: any) {
+  componentDidUpdate(prevProps: Props) {
     if(prevProps.selectedUser !== this.props.selectedUser) {
       this.setUserData()
     }

@@ -18,7 +18,7 @@ const API = 'https://gorest.co.in/public-api';
 const ACCESS_TOKEN = 'access-token=bfbcWHZ3j1wpEpMOlwuMGniVp7hQo6O3R4nt';
 
 
-export const fetchUsers: any = () =>  {
+export const fetchUsers: any = () => {
   return (dispatch: Dispatch): void => {
     dispatch(getUsers());
     fetch(`${API}/users?${ACCESS_TOKEN}`)

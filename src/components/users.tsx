@@ -30,11 +30,6 @@ export class Users extends React.Component<Props> {
     this.props.getUsers()
   }
 
-  // selectUser(event: any, user: any) {
-  //   this.setState({ selectedUser: user }, () => this.props.selectUser(this.state.selectedUser));
-  // }
-
-
   render() {
     return (
       <Container>

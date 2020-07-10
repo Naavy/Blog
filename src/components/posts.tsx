@@ -29,7 +29,7 @@ export class Posts extends React.Component<Props, {}> {
     more: false
   }
 
-  componentDidUpdate(prevProps: any) {
+  componentDidUpdate(prevProps: Props) {
     if(this.props.selectedUser && this.props.selectedUser !== prevProps.selectedUser) {
       this.props.getPosts(this.props.selectedUser.id);
       this.setState({ more: false })
